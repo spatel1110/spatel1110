@@ -1,3 +1,5 @@
+<h1 align="center">Hi 👋, I'm Shubham Patel</h1>
+
 # 💫 About Me:
 🔭 I’m currently working at Vnurture Technologies as an intern<br>🌱 I’m currently learning machine and deep learning<br>⚡ Fun fact A passionate about machine learning who is still waiting for my neural network to train<br>📫 How to reach me shubhsmit11@gmail.com<br><br>
 
