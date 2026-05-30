@@ -85,9 +85,7 @@ Right now I'm deep into **retrieval systems**, **multi-agent orchestration**, an
 ## GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=spatel1110&show_icons=true&theme=default&hide_border=true&count_private=true" height="150"/>
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=spatel1110&layout=compact&theme=default&hide_border=true" height="150"/>
+  <img src="https://streak-stats.demolab.com?user=spatel1110&theme=default&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" height="150"/>
 </p>
 
 ---
