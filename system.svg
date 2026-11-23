@@ -24,7 +24,7 @@
   <g transform="translate(1009 78)"><rect class="box" width="136" height="60" rx="14"/><text class="sub" x="16" y="22">07</text><text class="label" x="16" y="43">IMPROVE</text></g>
 
   <!-- command center -->
-  <circle cx="600" cy="344" r="107" fill="none" stroke="#8b5cf6" stroke-opacity=".18"/><circle cx="600" cy="344" r="82" fill="url(#core)" stroke="#8b5cf6" stroke-width="2" filter="url(#glow)"/>
+  <circle cx="600" cy="344" r="107" fill="none" stroke="#8b5cf6" stroke-opacity=".18"/><circle cx="600" cy="344" r="100" fill="url(#core)" stroke="#8b5cf6" stroke-width="2" filter="url(#glow)"/>
   <circle class="pulse" cx="600" cy="313" r="8" fill="#c4b5fd" filter="url(#glow)"/><text x="600" y="348" text-anchor="middle" class="s" font-size="17" font-weight="700" fill="#f8fafc">LLM ORCHESTRATOR</text><text x="600" y="370" text-anchor="middle" class="m" font-size="10" fill="#a5b4fc">PLAN · ROUTE · RETRY</text>
 
   <path class="link" d="M518 309L354 248M682 309l164-61M518 378l-164 66M682 378l164 66M600 262V211M600 426v52"/>
