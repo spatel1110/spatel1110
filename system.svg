@@ -1,23 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="315" viewBox="0 0 1200 315" role="img" aria-label="Production GenAI system architecture">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-label="AI Agent Command Center and production GenAI lifecycle">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#060a17"/><stop offset="1" stop-color="#0b1324"/></linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#050816"/><stop offset="1" stop-color="#0a1324"/></linearGradient>
     <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient>
-    <filter id="gl"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <style>.s{font-family:Inter,Segoe UI,Arial,sans-serif}.m{font-family:Consolas,monospace}.box{fill:#0f172a;stroke:#334155}.t{font:600 15px Inter,Segoe UI,Arial,sans-serif;fill:#e2e8f0}.k{font:11px Consolas,monospace;fill:#64748b}.line{fill:none;stroke:url(#flow);stroke-width:2;stroke-dasharray:8 9;animation:f 2s linear infinite}.loop{fill:none;stroke:#f59e0b;stroke-width:1.5;stroke-dasharray:5 7;animation:f 2s linear infinite}@keyframes f{to{stroke-dashoffset:-34}}.dot{filter:url(#gl)} </style>
+    <radialGradient id="core"><stop stop-color="#7c3aed" stop-opacity=".55"/><stop offset=".55" stop-color="#172554" stop-opacity=".8"/><stop offset="1" stop-color="#0b1020"/></radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#94a3b8" stroke-opacity=".045"/></pattern>
+    <style>
+      .s{font-family:Inter,Segoe UI,Arial,sans-serif}.m{font-family:Consolas,'Liberation Mono',monospace}.box{fill:#0d1629;stroke:#2b3953}.label{font:600 14px Inter,Segoe UI,Arial,sans-serif;fill:#e2e8f0}.sub{font:11px Consolas,monospace;fill:#64748b}.flow{fill:none;stroke:url(#flow);stroke-width:2;stroke-dasharray:8 10;animation:move 2.4s linear infinite}.link{fill:none;stroke:#64748b;stroke-opacity:.5;stroke-width:1.4;stroke-dasharray:4 7;animation:move 2.8s linear infinite}.pulse{animation:pulse 2.6s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.d1{animation-delay:-.65s}.d2{animation-delay:-1.3s}.d3{animation-delay:-1.95s}@keyframes move{to{stroke-dashoffset:-36}}@keyframes pulse{0%,100%{opacity:.55;transform:scale(.92)}50%{opacity:1;transform:scale(1.08)}}
+    </style>
   </defs>
-  <rect width="1200" height="315" rx="20" fill="url(#bg)" stroke="#1e293b"/>
-  <text x="42" y="43" class="m" font-size="12" fill="#67e8f9">PRODUCTION GENAI // RETRIEVE → REASON → EVALUATE</text>
-  <text x="1090" y="43" class="m" font-size="11" fill="#475569">v1.0</text>
+  <rect width="1200" height="520" rx="22" fill="url(#bg)" stroke="#1e293b"/><rect width="1200" height="520" rx="22" fill="url(#grid)"/>
+  <text x="40" y="41" class="m" font-size="12" fill="#67e8f9">AGENT COMMAND CENTER</text><text x="1028" y="41" class="m" font-size="11" fill="#475569">SYSTEM // ONLINE</text><circle cx="1009" cy="37" r="4" fill="#22c55e"><animate attributeName="opacity" values=".3;1;.3" dur="1.8s" repeatCount="indefinite"/></circle>
 
-  <path class="line" d="M184 139H258M418 139h74M652 139h74M886 139h74"/>
-  <path class="loop" d="M1040 190v57H572v-57"/>
-  <polygon points="255,133 267,139 255,145" fill="#64748b"/><polygon points="489,133 501,139 489,145" fill="#64748b"/><polygon points="723,133 735,139 723,145" fill="#64748b"/><polygon points="957,133 969,139 957,145" fill="#64748b"/>
-  <polygon points="566,195 572,183 578,195" fill="#f59e0b"/>
+  <!-- lifecycle -->
+  <path class="flow" d="M106 108H1093"/><polygon points="1091,102 1103,108 1091,114" fill="#ec4899"/>
+  <path class="flow" d="M1094 108c62 0 62 66 0 66H106c-62 0-62-66 0-66" opacity=".45"/>
+  <g transform="translate(55 78)"><rect class="box" width="130" height="60" rx="14"/><text class="sub" x="16" y="22">01</text><text class="label" x="16" y="43">INGEST</text></g>
+  <g transform="translate(214 78)"><rect class="box" width="130" height="60" rx="14"/><text class="sub" x="16" y="22">02</text><text class="label" x="16" y="43">RETRIEVE</text></g>
+  <g transform="translate(373 78)"><rect class="box" width="130" height="60" rx="14"/><text class="sub" x="16" y="22">03</text><text class="label" x="16" y="43">REASON</text></g>
+  <g transform="translate(532 78)"><rect class="box" width="130" height="60" rx="14"/><text class="sub" x="16" y="22">04</text><text class="label" x="16" y="43">EVALUATE</text></g>
+  <g transform="translate(691 78)"><rect class="box" width="130" height="60" rx="14"/><text class="sub" x="16" y="22">05</text><text class="label" x="16" y="43">DEPLOY</text></g>
+  <g transform="translate(850 78)"><rect class="box" width="130" height="60" rx="14"/><text class="sub" x="16" y="22">06</text><text class="label" x="16" y="43">OBSERVE</text></g>
+  <g transform="translate(1009 78)"><rect class="box" width="136" height="60" rx="14"/><text class="sub" x="16" y="22">07</text><text class="label" x="16" y="43">IMPROVE</text></g>
 
-  <g transform="translate(24 82)"><rect class="box" width="160" height="114" rx="14"/><circle class="dot" cx="28" cy="30" r="6" fill="#22d3ee"/><text class="k" x="45" y="34">01 / INGEST</text><text class="t" x="22" y="68">Documents</text><text class="k" x="22" y="91">PDF · SQL · APIs</text></g>
-  <g transform="translate(258 82)"><rect class="box" width="160" height="114" rx="14"/><circle class="dot" cx="28" cy="30" r="6" fill="#38bdf8"/><text class="k" x="45" y="34">02 / INDEX</text><text class="t" x="22" y="68">Embeddings</text><text class="k" x="22" y="91">FAISS · HNSW</text></g>
-  <g transform="translate(492 82)"><rect class="box" width="160" height="114" rx="14"/><circle class="dot" cx="28" cy="30" r="6" fill="#8b5cf6"/><text class="k" x="45" y="34">03 / RETRIEVE</text><text class="t" x="22" y="68">Context + RBAC</text><text class="k" x="22" y="91">rerank · filter</text></g>
-  <g transform="translate(726 82)"><rect class="box" width="160" height="114" rx="14"/><circle class="dot" cx="28" cy="30" r="6" fill="#c084fc"/><text class="k" x="45" y="34">04 / REASON</text><text class="t" x="22" y="68">LLM Agents</text><text class="k" x="22" y="91">tools · retry · trace</text></g>
-  <g transform="translate(960 82)"><rect class="box" width="216" height="114" rx="14" stroke="#a855f7"/><circle class="dot" cx="28" cy="30" r="6" fill="#ec4899"/><text class="k" x="45" y="34">05 / EVALUATE</text><text class="t" x="22" y="68">Grounded?</text><text class="k" x="22" y="91">faithful · relevant · safe</text></g>
-  <g transform="translate(705 248)"><rect width="240" height="36" rx="18" fill="#21170b" stroke="#92400e"/><circle cx="20" cy="18" r="4" fill="#f59e0b"/><text x="33" y="22" class="m" font-size="11" fill="#fbbf24">FAIL → RETRIEVE AGAIN</text></g>
+  <!-- command center -->
+  <circle cx="600" cy="344" r="107" fill="none" stroke="#8b5cf6" stroke-opacity=".18"/><circle cx="600" cy="344" r="82" fill="url(#core)" stroke="#8b5cf6" stroke-width="2" filter="url(#glow)"/>
+  <circle class="pulse" cx="600" cy="313" r="8" fill="#c4b5fd" filter="url(#glow)"/><text x="600" y="348" text-anchor="middle" class="s" font-size="17" font-weight="700" fill="#f8fafc">LLM ORCHESTRATOR</text><text x="600" y="370" text-anchor="middle" class="m" font-size="10" fill="#a5b4fc">PLAN · ROUTE · RETRY</text>
+
+  <path class="link" d="M518 309L354 248M682 309l164-61M518 378l-164 66M682 378l164 66M600 262V211M600 426v52"/>
+  <g transform="translate(212 207)"><rect class="box" width="174" height="82" rx="15"/><circle class="pulse" cx="25" cy="25" r="5" fill="#22d3ee"/><text class="label" x="42" y="30">RETRIEVAL</text><text class="sub" x="20" y="57">hybrid · rerank · RBAC</text></g>
+  <g transform="translate(814 207)"><rect class="box" width="174" height="82" rx="15"/><circle class="pulse d1" cx="25" cy="25" r="5" fill="#38bdf8"/><text class="label" x="42" y="30">TOOLS + APIs</text><text class="sub" x="20" y="57">MCP · SQL · services</text></g>
+  <g transform="translate(212 403)"><rect class="box" width="174" height="82" rx="15"/><circle class="pulse d2" cx="25" cy="25" r="5" fill="#a78bfa"/><text class="label" x="42" y="30">MEMORY</text><text class="sub" x="20" y="57">state · context · cache</text></g>
+  <g transform="translate(814 403)"><rect class="box" width="174" height="82" rx="15"/><circle class="pulse d3" cx="25" cy="25" r="5" fill="#ec4899"/><text class="label" x="42" y="30">GUARDRAILS</text><text class="sub" x="20" y="57">access · safety · policy</text></g>
+  <g transform="translate(510 177)"><rect class="box" width="180" height="54" rx="15"/><circle class="pulse d1" cx="24" cy="27" r="5" fill="#f59e0b"/><text class="label" x="41" y="32">OBSERVABILITY</text></g>
+  <g transform="translate(510 461)"><rect class="box" width="180" height="42" rx="15"/><circle class="pulse d2" cx="24" cy="21" r="5" fill="#22c55e"/><text class="label" x="41" y="26">EVALUATION</text></g>
+
+  <text x="1040" y="500" class="m" font-size="10" fill="#334155">FAILURE IS A SIGNAL → LOOP, TRACE, IMPROVE</text>
 </svg>

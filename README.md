@@ -16,73 +16,36 @@ I’m an **ML Engineer with 3.4+ years of experience** turning language-model pr
 
 <br/>
 
-## `02. THE SYSTEMS I BUILD`
+## `02. AGENT COMMAND CENTER`
 
-<img src="./system.svg" width="100%" alt="Production GenAI architecture from document ingestion through evaluation" />
+A production GenAI system is a continuous control loop. The orchestrator plans and routes work across retrieval, tools, memory, guardrails, tracing, and evaluation. Production feedback returns to the system as the next improvement signal.
+
+<img src="./system.svg" width="100%" alt="AI Agent Command Center inside the complete GenAI lifecycle" />
 
 <br/>
 
 ## `03. SELECTED BUILDS`
 
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### `⌕` Semantic Code Search
-
-Indexed **200K+ code snippets** with CodeBERT and FAISS, exposed through FastAPI with PostgreSQL metadata.
-
-**`< 50 ms`** query latency &nbsp;·&nbsp; **`+34%`** MRR@10 vs BM25
-
-`CodeBERT` `FAISS` `FastAPI` `PostgreSQL`
-
-</td>
-<td width="50%" valign="top">
-
-### `▤` LLM Text-to-SQL
-
-Built schema-aware SQL generation with query validation, safety controls, and a self-healing retry loop.
-
-**`< 2%`** hallucinated columns &nbsp;·&nbsp; **`~80%`** failed queries repaired
-
-`Gemini` `LangChain` `SQLAlchemy` `DeepEval`
-
-</td>
-</tr>
-</table>
+<img src="./projects.svg" width="100%" alt="Terminal-style project showcase for Semantic Code Search and Text-to-SQL" />
 
 <br/>
 
-## `04. ENGINEERING TOOLKIT`
+## `04. ENGINEERING STACK`
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,fastapi,postgres,redis,docker,aws,githubactions&perline=10" alt="Core engineering toolkit"/>
-</p>
+The tools are grouped by the role they play in an AI system, from language and model development to retrieval, evaluation, infrastructure, and delivery.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/LangChain-0B101C?style=flat-square&logo=langchain&logoColor=white"/>
-  <img src="https://img.shields.io/badge/LangGraph-0B101C?style=flat-square&logo=langchain&logoColor=white"/>
-  <img src="https://img.shields.io/badge/LangSmith-0B101C?style=flat-square&logo=langchain&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Hugging_Face-0B101C?style=flat-square&logo=huggingface&logoColor=FFD21E"/>
-  <img src="https://img.shields.io/badge/FAISS-0B101C?style=flat-square&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Pinecone-0B101C?style=flat-square&logo=pinecone&logoColor=white"/>
-  <img src="https://img.shields.io/badge/MLflow-0B101C?style=flat-square&logo=mlflow&logoColor=0194E2"/>
-  <img src="https://img.shields.io/badge/DeepEval-0B101C?style=flat-square&logoColor=white"/>
-</p>
+<img src="./stack.svg" width="100%" alt="Layered AI and machine learning engineering toolkit" />
 
 <br/>
 
-## `05. EXPERIENCE SNAPSHOT`
+## `05. MODEL DEVELOPMENT HISTORY`
 
-```text
-2026          ML Engineer          Amazo Healthcare
-              Financial-document extraction · LLM agents · evaluation pipelines
+<img src="./experience.svg" width="100%" alt="Career timeline represented as model pre-training, fine-tuning, and production deployment" />
 
-2023—2025     Software Developer   Odoo India
-              Semantic search · support-ticket RAG · production Python
-```
-
-> **Kaggle Notebook Expert — Top 7% globally** · Technical mentor to **40+ developers across 10+ teams** at the Odoo India Hackathon.
+<p align="center">
+  <strong>Kaggle Notebook Expert · Top 7% globally</strong><br/>
+  <sub>Technical mentor to 40+ developers across 10+ teams at the Odoo India Hackathon</sub>
+</p>
 
 ---
 
