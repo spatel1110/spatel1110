@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
+  <title id="title">Shubham Patel, Machine Learning Engineer</title>
+  <desc id="desc">An AI-themed profile banner showing a neural network, model pipeline, and production machine learning focus.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050816"/>
+      <stop offset="0.52" stop-color="#0b1026"/>
+      <stop offset="1" stop-color="#07111f"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#22d3ee"/><stop offset="0.5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity=".28"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft"><feGaussianBlur stdDeviation="18"/></filter>
+    <filter id="nodeGlow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#94a3b8" stroke-opacity=".055"/>
+    </pattern>
+    <style>
+      .sans{font-family:Inter,Segoe UI,Arial,sans-serif}.mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace}
+      .wire{fill:none;stroke:url(#stroke);stroke-width:1.35;stroke-opacity:.34;stroke-dasharray:7 10;animation:flow 2.6s linear infinite}
+      .wire2{animation-delay:-1.3s}.node{fill:#0b1026;stroke-width:2;filter:url(#nodeGlow)}
+      .pulse{animation:pulse 2.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.d1{animation-delay:-.7s}.d2{animation-delay:-1.4s}.d3{animation-delay:-2.1s}
+      .chip{fill:#0f172a;stroke:#334155}.ticker{animation:blink 1.2s step-end infinite}
+      @keyframes flow{to{stroke-dashoffset:-34}}@keyframes pulse{0%,100%{opacity:.55;transform:scale(.88)}50%{opacity:1;transform:scale(1.12)}}@keyframes blink{50%{opacity:0}}
+    </style>
+  </defs>
+  <rect width="1200" height="420" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="420" rx="24" fill="url(#grid)"/>
+  <ellipse cx="1020" cy="95" rx="240" ry="190" fill="url(#glow)" filter="url(#soft)"/>
+  <ellipse cx="180" cy="370" rx="220" ry="120" fill="#06b6d4" opacity=".05" filter="url(#soft)"/>
+
+  <g opacity=".9">
+    <path class="wire" d="M790 72C865 72 842 145 925 145S998 79 1082 79"/>
+    <path class="wire wire2" d="M790 148C860 148 857 224 932 224s77-76 151-76"/>
+    <path class="wire" d="M790 224c69 0 74 73 142 73s83-72 151-72"/>
+    <path class="wire wire2" d="M790 300c78 0 74-76 142-76s76 75 151 75"/>
+    <path class="wire" d="M925 145v152M1082 79v220M790 72v228"/>
+    <circle class="node pulse" cx="790" cy="72" r="8" stroke="#22d3ee"/><circle class="node pulse d1" cx="790" cy="148" r="8" stroke="#22d3ee"/><circle class="node pulse d2" cx="790" cy="224" r="8" stroke="#22d3ee"/><circle class="node pulse d3" cx="790" cy="300" r="8" stroke="#22d3ee"/>
+    <circle class="node pulse d2" cx="925" cy="145" r="10" stroke="#8b5cf6"/><circle class="node pulse" cx="932" cy="224" r="10" stroke="#8b5cf6"/><circle class="node pulse d3" cx="932" cy="297" r="10" stroke="#8b5cf6"/>
+    <circle class="node pulse d1" cx="1082" cy="79" r="9" stroke="#ec4899"/><circle class="node pulse d3" cx="1083" cy="148" r="9" stroke="#ec4899"/><circle class="node pulse" cx="1083" cy="225" r="9" stroke="#ec4899"/><circle class="node pulse d2" cx="1083" cy="299" r="9" stroke="#ec4899"/>
+    <text x="778" y="338" class="mono" font-size="11" fill="#64748b">INPUT</text><text x="907" y="338" class="mono" font-size="11" fill="#64748b">REASON</text><text x="1054" y="338" class="mono" font-size="11" fill="#64748b">OUTPUT</text>
+  </g>
+
+  <g transform="translate(70 58)">
+    <rect width="154" height="30" rx="15" fill="#10233c" stroke="#155e75"/>
+    <circle cx="18" cy="15" r="4" fill="#22d3ee"><animate attributeName="opacity" values=".35;1;.35" dur="2s" repeatCount="indefinite"/></circle>
+    <text x="31" y="20" class="mono" font-size="12" fill="#67e8f9">AVAILABLE FOR AI</text>
+    <text x="0" y="103" class="sans" font-size="59" font-weight="760" fill="#f8fafc" letter-spacing="-1">SHUBHAM PATEL</text>
+    <text x="2" y="143" class="mono" font-size="20" fill="#a5b4fc">Machine Learning Engineer<tspan class="ticker" fill="#22d3ee">_</tspan></text>
+    <text x="2" y="190" class="sans" font-size="17" fill="#94a3b8">I build production GenAI systems that retrieve, reason,</text>
+    <text x="2" y="216" class="sans" font-size="17" fill="#94a3b8">evaluate, and improve before they reach users.</text>
+    <g transform="translate(0 252)">
+      <rect class="chip" width="86" height="34" rx="8"/><text x="18" y="22" class="mono" font-size="12" fill="#67e8f9">01 · RAG</text>
+      <rect class="chip" x="96" width="130" height="34" rx="8"/><text x="112" y="22" class="mono" font-size="12" fill="#c4b5fd">02 · LLM AGENTS</text>
+      <rect class="chip" x="236" width="126" height="34" rx="8"/><text x="252" y="22" class="mono" font-size="12" fill="#f9a8d4">03 · EVALUATION</text>
+      <rect class="chip" x="372" width="102" height="34" rx="8"/><text x="388" y="22" class="mono" font-size="12" fill="#86efac">04 · MLOPS</text>
+    </g>
+  </g>
+  <rect x="1" y="1" width="1198" height="418" rx="23" fill="none" stroke="url(#stroke)" stroke-opacity=".35"/>
+</svg>

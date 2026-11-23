@@ -1,96 +1,91 @@
-<h1 align="center">Hey, I'm Shubham 👋</h1>
+<img src="./banner.svg" width="100%" alt="Shubham Patel — Machine Learning Engineer" />
 
 <p align="center">
-  <b>ML Engineer · Building production GenAI systems · Gandhinagar, India</b>
+  <a href="mailto:shubhsmit11@gmail.com"><img src="https://img.shields.io/badge/EMAIL-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>&nbsp;
+  <a href="https://linkedin.com/in/shubham-patel"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>&nbsp;
+  <a href="https://kaggle.com/shubham1111"><img src="https://img.shields.io/badge/KAGGLE-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/></a>
+</p>
+
+<br/>
+
+## `01. SYSTEM PROFILE`
+
+I’m an **ML Engineer with 3.4+ years of experience** turning language-model prototypes into production systems. My work sits at the intersection of **retrieval, agent orchestration, evaluation, and MLOps**, with a focus on measurable quality rather than impressive demos.
+
+<img src="./impact.svg" width="100%" alt="Production ML impact: retrieval latency reduced 60%, more than 1,000 daily inferences, search quality improved 34%, and over 85% test coverage" />
+
+<br/>
+
+## `02. THE SYSTEMS I BUILD`
+
+<img src="./system.svg" width="100%" alt="Production GenAI architecture from document ingestion through evaluation" />
+
+<br/>
+
+## `03. SELECTED BUILDS`
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### `⌕` Semantic Code Search
+
+Indexed **200K+ code snippets** with CodeBERT and FAISS, exposed through FastAPI with PostgreSQL metadata.
+
+**`< 50 ms`** query latency &nbsp;·&nbsp; **`+34%`** MRR@10 vs BM25
+
+`CodeBERT` `FAISS` `FastAPI` `PostgreSQL`
+
+</td>
+<td width="50%" valign="top">
+
+### `▤` LLM Text-to-SQL
+
+Built schema-aware SQL generation with query validation, safety controls, and a self-healing retry loop.
+
+**`< 2%`** hallucinated columns &nbsp;·&nbsp; **`~80%`** failed queries repaired
+
+`Gemini` `LangChain` `SQLAlchemy` `DeepEval`
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+## `04. ENGINEERING TOOLKIT`
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,pytorch,tensorflow,sklearn,fastapi,postgres,redis,docker,aws,githubactions&perline=10" alt="Core engineering toolkit"/>
 </p>
 
 <p align="center">
-  <a href="mailto:shubhnp1120@gmail.com"><img src="https://img.shields.io/badge/Gmail-shubhnp1120-D14836?style=flat&logo=gmail&logoColor=white"/></a>&nbsp;
-  <a href="https://linkedin.com/in/shubham-patel"><img src="https://img.shields.io/badge/LinkedIn-shubham--patel-0A66C2?style=flat&logo=linkedin&logoColor=white"/></a>&nbsp;
-  <a href="https://kaggle.com/shubham1111"><img src="https://img.shields.io/badge/Kaggle-shubham1111-20BEFF?style=flat&logo=kaggle&logoColor=white"/></a>
+  <img src="https://img.shields.io/badge/LangChain-0B101C?style=flat-square&logo=langchain&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LangGraph-0B101C?style=flat-square&logo=langchain&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LangSmith-0B101C?style=flat-square&logo=langchain&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Hugging_Face-0B101C?style=flat-square&logo=huggingface&logoColor=FFD21E"/>
+  <img src="https://img.shields.io/badge/FAISS-0B101C?style=flat-square&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Pinecone-0B101C?style=flat-square&logo=pinecone&logoColor=white"/>
+  <img src="https://img.shields.io/badge/MLflow-0B101C?style=flat-square&logo=mlflow&logoColor=0194E2"/>
+  <img src="https://img.shields.io/badge/DeepEval-0B101C?style=flat-square&logoColor=white"/>
 </p>
 
----
+<br/>
 
-I'm an ML Engineer who went from writing production Python at **Odoo** to shipping RAG pipelines and LLM-powered workflows that actually make it to prod — not just notebooks. I care about the gap between "it works on my machine" and "it's handling real load without breaking."
+## `05. EXPERIENCE SNAPSHOT`
 
-Right now I'm deep into **retrieval systems**, **multi-agent orchestration**, and making language models do useful things reliably. I also mentor developers, write open-source notebooks on Kaggle, and genuinely enjoy the parts of ML that other people find tedious — evaluation, prompt iteration, debugging inference.
+```text
+2026          ML Engineer          Amazo Healthcare
+              Financial-document extraction · LLM agents · evaluation pipelines
 
----
+2023—2025     Software Developer   Odoo India
+              Semantic search · support-ticket RAG · production Python
+```
 
-## What I work with
-
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-
-**ML / DL**
-
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-![Keras](https://img.shields.io/badge/Keras-D00000?style=flat&logo=keras&logoColor=white)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
-![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat&logo=huggingface&logoColor=black)
-![LoRA/QLoRA](https://img.shields.io/badge/LoRA%2FQLoRA-8A2BE2?style=flat)
-
-**GenAI & Agents**
-
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat)
-![LangSmith](https://img.shields.io/badge/LangSmith-1C3C3C?style=flat)
-![RAG](https://img.shields.io/badge/RAG-6366F1?style=flat)
-![MCP](https://img.shields.io/badge/MCP-0F172A?style=flat)
-![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat)
-
-**Vector Stores & Databases**
-
-![FAISS](https://img.shields.io/badge/FAISS-0467DF?style=flat)
-![Pinecone](https://img.shields.io/badge/Pinecone-000000?style=flat&logo=pinecone&logoColor=white)
-![Chroma](https://img.shields.io/badge/Chroma-FF6B35?style=flat)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
-
-**MLOps & Cloud**
-
-![MLflow](https://img.shields.io/badge/MLflow-0194E2?style=flat&logo=mlflow&logoColor=white)
-![DVC](https://img.shields.io/badge/DVC-945DD6?style=flat&logo=dvc&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=githubactions&logoColor=white)
-![DeepSpeed](https://img.shields.io/badge/DeepSpeed-0078D4?style=flat)
-
----
-
-## Experience
-
-**ML Engineer (Contract)** · Freelance · *Jan 2026 – Apr 2026*
-> Designed and shipped end-to-end pipelines for extracting structured data from unstructured financial documents — PDFs, scanned invoices — into client-defined Excel templates using GPT-4o function calling on AWS Lambda.
-
-**Software Developer → ML Engineer** · Odoo India · *Jun 2023 – Dec 2025*
-> Started as a backend dev, ended up building the semantic search layer across Odoo's PostgreSQL records and PDF attachments, integrating LLMs into core business workflows, and optimising bulk data pipelines. That transition wasn't planned — it just kind of happened when the NLP work landed on my desk and I didn't want to give it back.
-
----
-
-## A few things worth knowing
-
-- 🏆 **Kaggle Notebook Expert** — Top 7% globally. I publish notebooks focused on reproducible feature engineering and model evaluation, not just "here's my score."
-- 🧑‍🏫 Mentored **40+ developers** across 10+ teams at the Odoo India Hackathon as technical lead — mostly unblocking architecture decisions and live debugging.
-- 🔍 I care about **evaluation**. A model that can't be measured can't be improved.
-- 🛠️ I have a bias toward **shipping** — >85% test coverage, CI/CD pipelines, and production monitoring aren't optional extras to me.
-
----
-
-## GitHub Stats
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=spatel1110&theme=default&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" height="150"/>
-</p>
+> **Kaggle Notebook Expert — Top 7% globally** · Technical mentor to **40+ developers across 10+ teams** at the Odoo India Hackathon.
 
 ---
 
 <p align="center">
-  <i>Always open to interesting ML problems and people who care about building things properly.</i><br><br>
-  <a href="mailto:shubhnp1120@gmail.com">shubhnp1120@gmail.com</a>
+  <samp>retrieve → reason → evaluate → ship → observe → improve</samp>
 </p>

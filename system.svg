@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="315" viewBox="0 0 1200 315" role="img" aria-label="Production GenAI system architecture">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#060a17"/><stop offset="1" stop-color="#0b1324"/></linearGradient>
+    <linearGradient id="flow" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22d3ee"/><stop offset=".5" stop-color="#8b5cf6"/><stop offset="1" stop-color="#ec4899"/></linearGradient>
+    <filter id="gl"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <style>.s{font-family:Inter,Segoe UI,Arial,sans-serif}.m{font-family:Consolas,monospace}.box{fill:#0f172a;stroke:#334155}.t{font:600 15px Inter,Segoe UI,Arial,sans-serif;fill:#e2e8f0}.k{font:11px Consolas,monospace;fill:#64748b}.line{fill:none;stroke:url(#flow);stroke-width:2;stroke-dasharray:8 9;animation:f 2s linear infinite}.loop{fill:none;stroke:#f59e0b;stroke-width:1.5;stroke-dasharray:5 7;animation:f 2s linear infinite}@keyframes f{to{stroke-dashoffset:-34}}.dot{filter:url(#gl)} </style>
+  </defs>
+  <rect width="1200" height="315" rx="20" fill="url(#bg)" stroke="#1e293b"/>
+  <text x="42" y="43" class="m" font-size="12" fill="#67e8f9">PRODUCTION GENAI // RETRIEVE → REASON → EVALUATE</text>
+  <text x="1090" y="43" class="m" font-size="11" fill="#475569">v1.0</text>
+
+  <path class="line" d="M184 139H258M418 139h74M652 139h74M886 139h74"/>
+  <path class="loop" d="M1040 190v57H572v-57"/>
+  <polygon points="255,133 267,139 255,145" fill="#64748b"/><polygon points="489,133 501,139 489,145" fill="#64748b"/><polygon points="723,133 735,139 723,145" fill="#64748b"/><polygon points="957,133 969,139 957,145" fill="#64748b"/>
+  <polygon points="566,195 572,183 578,195" fill="#f59e0b"/>
+
+  <g transform="translate(24 82)"><rect class="box" width="160" height="114" rx="14"/><circle class="dot" cx="28" cy="30" r="6" fill="#22d3ee"/><text class="k" x="45" y="34">01 / INGEST</text><text class="t" x="22" y="68">Documents</text><text class="k" x="22" y="91">PDF · SQL · APIs</text></g>
+  <g transform="translate(258 82)"><rect class="box" width="160" height="114" rx="14"/><circle class="dot" cx="28" cy="30" r="6" fill="#38bdf8"/><text class="k" x="45" y="34">02 / INDEX</text><text class="t" x="22" y="68">Embeddings</text><text class="k" x="22" y="91">FAISS · HNSW</text></g>
+  <g transform="translate(492 82)"><rect class="box" width="160" height="114" rx="14"/><circle class="dot" cx="28" cy="30" r="6" fill="#8b5cf6"/><text class="k" x="45" y="34">03 / RETRIEVE</text><text class="t" x="22" y="68">Context + RBAC</text><text class="k" x="22" y="91">rerank · filter</text></g>
+  <g transform="translate(726 82)"><rect class="box" width="160" height="114" rx="14"/><circle class="dot" cx="28" cy="30" r="6" fill="#c084fc"/><text class="k" x="45" y="34">04 / REASON</text><text class="t" x="22" y="68">LLM Agents</text><text class="k" x="22" y="91">tools · retry · trace</text></g>
+  <g transform="translate(960 82)"><rect class="box" width="216" height="114" rx="14" stroke="#a855f7"/><circle class="dot" cx="28" cy="30" r="6" fill="#ec4899"/><text class="k" x="45" y="34">05 / EVALUATE</text><text class="t" x="22" y="68">Grounded?</text><text class="k" x="22" y="91">faithful · relevant · safe</text></g>
+  <g transform="translate(705 248)"><rect width="240" height="36" rx="18" fill="#21170b" stroke="#92400e"/><circle cx="20" cy="18" r="4" fill="#f59e0b"/><text x="33" y="22" class="m" font-size="11" fill="#fbbf24">FAIL → RETRIEVE AGAIN</text></g>
+</svg>
