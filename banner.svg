@@ -20,7 +20,7 @@
     </pattern>
     <style>
       .sans{font-family:Inter,Segoe UI,Arial,sans-serif}.mono{font-family:'SFMono-Regular',Consolas,'Liberation Mono',monospace}
-      .wire{fill:none;stroke:url(#stroke);stroke-width:1.35;stroke-opacity:.34;stroke-dasharray:7 10;animation:flow 2.6s linear infinite}
+      .wire{fill:none;stroke:url(#stroke);stroke-width:1;stroke-opacity:.2;stroke-dasharray:7 10;animation:flow 2.6s linear infinite}
       .wire2{animation-delay:-1.3s}.node{fill:#0b1026;stroke-width:2;filter:url(#nodeGlow)}
       .pulse{animation:pulse 2.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.d1{animation-delay:-.7s}.d2{animation-delay:-1.4s}.d3{animation-delay:-2.1s}
       .chip{fill:#0f172a;stroke:#334155}.ticker{animation:blink 1.2s step-end infinite}
@@ -33,15 +33,32 @@
   <ellipse cx="180" cy="370" rx="220" ry="120" fill="#06b6d4" opacity=".05" filter="url(#soft)"/>
 
   <g opacity=".9">
-    <path class="wire" d="M790 72C865 72 842 145 925 145S998 79 1082 79"/>
-    <path class="wire wire2" d="M790 148C860 148 857 224 932 224s77-76 151-76"/>
-    <path class="wire" d="M790 224c69 0 74 73 142 73s83-72 151-72"/>
-    <path class="wire wire2" d="M790 300c78 0 74-76 142-76s76 75 151 75"/>
-    <path class="wire" d="M925 145v152M1082 79v220M790 72v228"/>
-    <circle class="node pulse" cx="790" cy="72" r="8" stroke="#22d3ee"/><circle class="node pulse d1" cx="790" cy="148" r="8" stroke="#22d3ee"/><circle class="node pulse d2" cx="790" cy="224" r="8" stroke="#22d3ee"/><circle class="node pulse d3" cx="790" cy="300" r="8" stroke="#22d3ee"/>
-    <circle class="node pulse d2" cx="925" cy="145" r="10" stroke="#8b5cf6"/><circle class="node pulse" cx="932" cy="224" r="10" stroke="#8b5cf6"/><circle class="node pulse d3" cx="932" cy="297" r="10" stroke="#8b5cf6"/>
-    <circle class="node pulse d1" cx="1082" cy="79" r="9" stroke="#ec4899"/><circle class="node pulse d3" cx="1083" cy="148" r="9" stroke="#ec4899"/><circle class="node pulse" cx="1083" cy="225" r="9" stroke="#ec4899"/><circle class="node pulse d2" cx="1083" cy="299" r="9" stroke="#ec4899"/>
-    <text x="778" y="338" class="mono" font-size="11" fill="#64748b">INPUT</text><text x="907" y="338" class="mono" font-size="11" fill="#64748b">REASON</text><text x="1054" y="338" class="mono" font-size="11" fill="#64748b">OUTPUT</text>
+    <path class="wire" d="M690 55L800 90M690 55L800 160M690 55L800 230M690 55L800 300M690 125L800 90M690 125L800 160M690 125L800 230M690 125L800 300M690 195L800 90M690 195L800 160M690 195L800 230M690 195L800 300M690 265L800 90M690 265L800 160M690 265L800 230M690 265L800 300M690 335L800 90M690 335L800 160M690 335L800 230M690 335L800 300"/>
+    <path class="wire wire2" d="M800 90L910 55M800 90L910 125M800 90L910 195M800 90L910 265M800 90L910 335M800 160L910 55M800 160L910 125M800 160L910 195M800 160L910 265M800 160L910 335M800 230L910 55M800 230L910 125M800 230L910 195M800 230L910 265M800 230L910 335M800 300L910 55M800 300L910 125M800 300L910 195M800 300L910 265M800 300L910 335"/>
+    <path class="wire" d="M910 55L1020 90M910 55L1020 160M910 55L1020 230M910 55L1020 300M910 125L1020 90M910 125L1020 160M910 125L1020 230M910 125L1020 300M910 195L1020 90M910 195L1020 160M910 195L1020 230M910 195L1020 300M910 265L1020 90M910 265L1020 160M910 265L1020 230M910 265L1020 300M910 335L1020 90M910 335L1020 160M910 335L1020 230M910 335L1020 300"/>
+    <path class="wire wire2" d="M1020 90L1120 195M1020 160L1120 195M1020 230L1120 195M1020 300L1120 195"/>
+    <circle class="node pulse" cx="690" cy="55" r="8" stroke="#22d3ee"/>
+    <circle class="node pulse d1" cx="690" cy="125" r="8" stroke="#22d3ee"/>
+    <circle class="node pulse d2" cx="690" cy="195" r="8" stroke="#22d3ee"/>
+    <circle class="node pulse d3" cx="690" cy="265" r="8" stroke="#22d3ee"/>
+    <circle class="node pulse" cx="690" cy="335" r="8" stroke="#22d3ee"/>
+    <circle class="node pulse d1" cx="800" cy="90" r="9" stroke="#8b5cf6"/>
+    <circle class="node pulse d2" cx="800" cy="160" r="9" stroke="#8b5cf6"/>
+    <circle class="node pulse d3" cx="800" cy="230" r="9" stroke="#8b5cf6"/>
+    <circle class="node pulse" cx="800" cy="300" r="9" stroke="#8b5cf6"/>
+    <circle class="node pulse d1" cx="910" cy="55" r="10" stroke="#8b5cf6"/>
+    <circle class="node pulse d2" cx="910" cy="125" r="10" stroke="#8b5cf6"/>
+    <circle class="node pulse d3" cx="910" cy="195" r="10" stroke="#8b5cf6"/>
+    <circle class="node pulse" cx="910" cy="265" r="10" stroke="#8b5cf6"/>
+    <circle class="node pulse d1" cx="910" cy="335" r="10" stroke="#8b5cf6"/>
+    <circle class="node pulse d2" cx="1020" cy="90" r="9" stroke="#a78bfa"/>
+    <circle class="node pulse d3" cx="1020" cy="160" r="9" stroke="#a78bfa"/>
+    <circle class="node pulse" cx="1020" cy="230" r="9" stroke="#a78bfa"/>
+    <circle class="node pulse d1" cx="1020" cy="300" r="9" stroke="#a78bfa"/>
+    <circle class="node pulse d2" cx="1120" cy="195" r="13" stroke="#ec4899"/>
+    <text x="690" y="385" text-anchor="middle" class="mono" font-size="11" fill="#64748b">INPUT</text>
+    <text x="910" y="385" text-anchor="middle" class="mono" font-size="11" fill="#64748b">REASON</text>
+    <text x="1120" y="385" text-anchor="middle" class="mono" font-size="11" fill="#64748b">OUTPUT</text>
   </g>
 
   <g transform="translate(70 58)">
